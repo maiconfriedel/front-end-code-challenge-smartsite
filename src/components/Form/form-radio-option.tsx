@@ -15,11 +15,9 @@ export function FormRadioOption({ name, value, label }: FormRadioOptionProps) {
   const { register } = useFormContext();
 
   return (
-    <div className="mb-2">
+    <label className="mb-2">
       <input type="radio" value={value} {...register(name)} />
-      <label className="ml-2" htmlFor="morning">
-        {label}
-      </label>
-    </div>
+      <span className="ml-2">{label}</span>
+    </label>
   );
 }
