@@ -1,6 +1,7 @@
 "use client";
 import { Form } from "@/components/Form";
 import { Header } from "@/components/header";
+import { Legends } from "@/components/legends";
 
 export default function Home() {
   async function handleFormSubmit(data: any) {
@@ -22,6 +23,7 @@ export default function Home() {
           está aberta e as medidas de segurança que estamos seguindo.
         </p>
         <Form onSubmit={handleFormSubmit} />
+        <Legends />
       </main>
     </div>
   );
